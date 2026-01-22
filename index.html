@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNXIANG ZHANG - Research Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2ea44f;
+            --secondary-color: #0969da;
+            --text-color: #24292f;
+            --light-gray: #f6f8fa;
+            --medium-gray: #eaecef;
+            --dark-gray: #6a737d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .research-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .research-item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+        
+        .item-date {
+            color: var(--dark-gray);
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .advisor {
+            font-style: italic;
+            margin-top: 5px;
+            color: var(--dark-gray);
+        }
+        
+        .publication {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: var(--light-gray);
+            border-radius: 5px;
+        }
+        
+        .pub-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .pub-details {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 15px;
+        }
+        
+        .skill-category h3 {
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--dark-gray);
+            padding: 20px;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .item-date {
+                margin-top: 5px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JUNXIANG ZHANG</h1>
+        <div class="contact-info">
+            <div class="contact-item">📧 12433016@mail.sustech.edu.cn</div>
+            <div class="contact-item">📱 (+86) 198-7472-2162</div>
+            <div class="contact-item">🏫 Southern University of Science and Technology, Shenzhen</div>
+        </div>
+        <p class="advisor">Advisor: Prof. Guang-Ren Duan (Academician, CAS | IEEE Fellow)</p>
+    </header>
+    
+    <section id="research">
+        <h2>Research Projects</h2>
+        
+        <div class="research-item">
+            <div class="item-header">
+                <div class="item-title">Gen3-Lite Robotic Arm Pattern Tracking</div>
+                <div class="item-date">Feb 2023 - Jun 2023</div>
+            </div>
+            <ul>
+                <li>Developed dual PID controllers for velocity control, enabling robotic arm to track and draw patterns on ArUco-marked whiteboard using RGB vision</li>
+                <li>Integrated computer vision with robotic motion control for precise pattern reproduction</li>
+            </ul>
+        </div>
+        
+        <div class="research-item">
+            <div class="item-header">
+                <div class="item-title">Smart Factory Multi-objective Scheduling Optimization</div>
+                <div class="item-date">Dec 2023 - Jun 2024</div>
+            </div>
+            <ul>
+                <li>Designed NSGA-II based genetic algorithm achieving Pareto optimal solutions for production line scheduling</li>
+                <li>Optimized for makespan minimization, equipment utilization maximization, and energy consumption minimization</li>
+                <li>Applied to intelligent manufacturing system optimization</li>
+            </ul>
+        </div>
+        
+        <div class="research-item">
+            <div class="item-header">
+                <div class="item-title">FAS-based Robust Trajectory Tracking for 3-DOF UAV</div>
+                <div class="item-date">Nov 2024 - Mar 2025</div>
+            </div>
+            <ul>
+                <li>Proposed Fully Actuated System control strategy with robust compensator for enhanced disturbance rejection</li>
+                <li>Theoretically proved tracking error convergence through Lyapunov stability analysis</li>
+                <li>Eliminated observer design through analytical derivative computation</li>
+            </ul>
+        </div>
+        
+        <div class="research-item">
+            <div class="item-header">
+                <div class="item-title">Omnidirectional Spherical-wheel Satellite Robot (Guangdong Climbing Program)</div>
+                <div class="item-date">Nov 2024 - Present</div>
+            </div>
+            <ul>
+                <li>Leading the university's only provincial key project on omnidirectional spherical-wheel satellite robot research</li>
+                <li>Project ranked first university-wide in competitive evaluation</li>
+                <li>Exploring novel locomotion mechanisms and control methods for space robotics</li>
+            </ul>
+        </div>
+        
+        <div class="research-item">
+            <div class="item-header">
+                <div class="item-title">YOLOv8 Optimized Real-time Waste Classification System</div>
+                <div class="item-date">Feb 2025 - Mar 2025</div>
+            </div>
+            <ul>
+                <li>Achieved 30 FPS real-time detection on Orange Pi AI Pro with Intel RealSense D455 depth camera integration</li>
+                <li>Developed complete embedded intelligent classification system</li>
+                <li>Optimized YOLOv8 object detection algorithm for efficient performance on edge devices</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        
+        <div class="publication">
+            <div class="pub-title">[1] Zhang J., Duan G.-R.† et al. "A FAS Approach for Robust Trajectory Tracking Control of a 3-DOF Quadrotor"</div>
+            <div class="pub-details">
+                <em>4th Conference on Fully Actuated System Theory & Applications</em> (Oral Presentation), 2025<br>
+                <strong>Key Contribution</strong>: Eliminated observer design through analytical derivative computation, integrated robust control with Lyapunov stability proof
+            </div>
+        </div>
+        
+        <div class="publication">
+            <div class="pub-title">[2] Duan Y., Zhang J., Zhang J. "Prescribed Performance Tracking Control for Uncertain Strict-Feedback Systems Using FAS Approach"</div>
+            <div class="pub-details">
+                <em>4th Conference on FAS Theory & Applications</em> (Oral Presentation), 2025<br>
+                <strong>Key Contribution</strong>: Developed global prescribed performance controller with novel performance function, removing initial state constraints
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python (PyTorch/TensorFlow)</li>
+                    <li>C++ (ROS)</li>
+                    <li>MATLAB</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>AI/ML</h3>
+                <ul>
+                    <li>Computer Vision (YOLO)</li>
+                    <li>Reinforcement Learning</li>
+                    <li>Deep Learning</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Control Systems</h3>
+                <ul>
+                    <li>PID Control</li>
+                    <li>Fully Actuated Systems</li>
+                    <li>Robust Control</li>
+                    <li>Lyapunov Stability</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>OpenCV</li>
+                    <li>LaTeX</li>
+                    <li>Linux</li>
+                    <li>SolidWorks</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 JUNXIANG ZHANG - Research Portfolio</p>
+        <p>Last Updated: March 2025 | <a href="https://github.com/jxzhjxzhang-creator">GitHub Profile</a></p>
+    </footer>
+</body>
+</html>
